@@ -1,3 +1,5 @@
+var inputOne = document.getElementsByTagName("nineAM");
+
 //Setting current time as a global function
 var currentTime = moment();
 
@@ -63,17 +65,15 @@ if(currentHour === 17){
     $('#8').css("background-color", "#77dd77"); //confirmed css works
 };
 
-var inputOne = document.getElementById("nineAMM").value;
-var inputTwo = document.getElementsByTagName("nineAM").value;
-inputThree = $('#0').val();
-
-// //local storage
-// $("#btn0").click(
-//     function() {
-//        // must stringify the object before save
-//        localStorage.setItem('9AM', JSON.stringify(inputOne));
-//     }
-// );
+//local storage
+$("#btn0").click(
+    function() {
+        inputOne = inputOne.value;
+        console.log(inputOne);
+       // must stringify the object before save
+       localStorage.setItem('9AM', JSON.stringify(inputOne));
+    }
+);
 
 // $("#loadGame").click(
 //     function() {
