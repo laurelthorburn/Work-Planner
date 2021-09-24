@@ -103,3 +103,59 @@ $('#btn2').click(function() {
 var save11AM = JSON.parse(localStorage.getItem('11AM'));
 
 document.getElementById("2").value = save11AM;
+
+//button 3 (12pm time slot)
+$('#btn3').click(function() {
+    inputThree = document.getElementById("3").value;
+    // // must stringify the object before save
+    localStorage.setItem('12PM', JSON.stringify(inputThree));
+    });
+
+var save12PM = JSON.parse(localStorage.getItem('12PM'));
+
+document.getElementById("3").value = save12PM;
+
+//button 4 (1pm time slot)
+$('#btn4').click(function() {
+    inputFour = document.getElementById("4").value;
+    // // must stringify the object before save
+    localStorage.setItem('1PM', JSON.stringify(inputFour));
+    });
+
+var save1PM = JSON.parse(localStorage.getItem('1PM'));
+
+document.getElementById("4").value = save1PM;
+
+//button 5 (2pm time slot)
+$('#btn5').click(function() {
+    inputFive = document.getElementById("5").value;
+    // // must stringify the object before save
+    localStorage.setItem('2PM', JSON.stringify(inputFive));
+    });
+
+var save2PM = JSON.parse(localStorage.getItem('2PM'));
+
+document.getElementById("5").value = save2PM;\
+
+//button 6 (3pm time slot)
+$('#btn6').click(function() {
+    inputSix = document.getElementById("6").value;
+    // // must stringify the object before save
+    localStorage.setItem('3PM', JSON.stringify(inputSix));
+    });
+
+var save3PM = JSON.parse(localStorage.getItem('3PM'));
+
+document.getElementById("6").value = save3PM;
+
+//button 7 (4pm time slot)
+$('#btn7').click(function() {
+    inputSeven = document.getElementById("7").value;
+    // // must stringify the object before save
+    localStorage.setItem('4PM', JSON.stringify(inputSeven));
+    });
+
+var save4PM = JSON.parse(localStorage.getItem('4PM'));
+
+document.getElementById("7").value = save4PM;
+
