@@ -159,3 +159,14 @@ var save4PM = JSON.parse(localStorage.getItem('4PM'));
 
 document.getElementById("7").value = save4PM;
 
+//button 8 (5pm time slot)
+$('#btn8').click(function() {
+    inputEight = document.getElementById("8").value;
+    // // must stringify the object before save
+    localStorage.setItem('5PM', JSON.stringify(inputEight));
+    });
+
+var save5PM = JSON.parse(localStorage.getItem('5PM'));
+
+document.getElementById("8").value = save5PM;
+
