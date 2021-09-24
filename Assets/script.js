@@ -16,13 +16,12 @@ console.log(typeof(currentHour)); //works, says it's a string so comparing numbe
 // $('[data-time]').each(function(i) {
 //     console.log($(this).data('time')); // number
 
-
+//time block
 if(currentHour === 9){
     $('#0').css("background-color", "#ff6961"); //confirmed css works
 } else if(currentHour < 9){
     $('#0').css("background-color", "#77dd77"); //confirmed css works
 };
-
 if(currentHour === 10){
     $('#1').css("background-color", "#ff6961"); //confirmed css works
 } else if(currentHour < 10){
@@ -63,3 +62,22 @@ if(currentHour === 17){
 } else if(currentHour < 17){
     $('#8').css("background-color", "#77dd77"); //confirmed css works
 };
+
+var inputOne = document.getElementById("nineAMM").value;
+var inputTwo = document.getElementsByTagName("nineAM").value;
+inputThree = $('#0').val();
+
+// //local storage
+// $("#btn0").click(
+//     function() {
+//        // must stringify the object before save
+//        localStorage.setItem('9AM', JSON.stringify(inputOne));
+//     }
+// );
+
+// $("#loadGame").click(
+//     function() {
+//        var save9AM = JSON.parse(localStorage.getItem('9AM'));
+//        alert(save9AM);
+//     }
+// );
