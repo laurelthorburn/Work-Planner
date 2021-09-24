@@ -45,11 +45,9 @@ Deployed Site: https://laurelthorburn.github.io/Work-Planner/
 
 # Resources/Credit
 
-* https://michael-karen.medium.com/how-to-save-high-scores-in-local-storage-7860baca9d68
-* https://gomakethings.com/saving-html-to-localstorage-with-vanilla-js/
-* https://www.w3schools.com/js/js_quiz.asp
-* https://www.thiscodeworks.com/add-event-listener-to-multiple-buttons-with-the-same-class-javascript/5efa75c76c23bc0014be6336
-* https://stackoverflow.com/questions/5410820/how-can-i-show-all-the-localstorage-saved-variables
-* https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
-* https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_settimeout_cleartimeout2
+* https://stackoverflow.com/questions/62904905/how-do-i-color-code-time-blocks-using-js
+* https://www.sitepoint.com/managing-dates-times-using-moment-js/
+* https://momentjs.com/docs/#/displaying/
+* https://www.w3schools.com/jsref/jsref_number.asp
+
 
