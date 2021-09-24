@@ -34,7 +34,7 @@ THEN the saved events persist
 
 # Website Screenshot
 
-![Screenshot of Laurel Thorburn's Coding Quiz](Assets/Images/LaurelCodeQuiz.gif)
+![Screenshot of Laurel Thorburn's Coding Quiz](Assets/Images/WorkPlanner.gif)
 
 # Links
 
@@ -49,5 +49,6 @@ Deployed Site: https://laurelthorburn.github.io/Work-Planner/
 * https://www.sitepoint.com/managing-dates-times-using-moment-js/
 * https://momentjs.com/docs/#/displaying/
 * https://www.w3schools.com/jsref/jsref_number.asp
+* https://stackoverflow.com/questions/22680413/how-to-invert-the-color-of-a-png-image-on-mouseover-which-is-inside-a-tag
 
 
