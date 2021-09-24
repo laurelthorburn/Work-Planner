@@ -69,6 +69,7 @@ if(currentHour === 17){
     $('#8').css("background-color", "#77dd77"); //confirmed css works
 };
 
+//button 0 (9am time slot)
 $('#btn0').click(function() {
     inputOne = document.getElementById("0").value;
     console.log(inputOne);
@@ -79,4 +80,17 @@ $('#btn0').click(function() {
 var save9AM = JSON.parse(localStorage.getItem('9AM'));
 console.log(save9AM); // works
 
-$('#0').value(save9AM);
+document.getElementById("0").value = save9AM;
+
+//button 1 (10am time slot)
+$('#btn1').click(function() {
+    inputOne = document.getElementById("1").value;
+    console.log(inputOne);
+    // // must stringify the object before save
+    localStorage.setItem('10AM', JSON.stringify(inputOne));
+    });
+
+var save10AM = JSON.parse(localStorage.getItem('10AM'));
+console.log(save10AM); // works
+
+document.getElementById("1").value = save10AM;
