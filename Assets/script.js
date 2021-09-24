@@ -70,17 +70,13 @@ if(currentHour === 17){
 };
 
 $('#btn0').click(function() {
-    console.log(1+1);
     inputOne = document.getElementById("0").value;
     console.log(inputOne);
     // // must stringify the object before save
     localStorage.setItem('9AM', JSON.stringify(inputOne));
     });
 
-window.onload = function () {
-    if(inputOne.innerText === null){
-        inputOne.innerText = ("");
-    } else{
-       var save9AM = JSON.parse(localStorage.getItem('9AM'));
-       inputOne.val(save9AM);
-    }};
+var save9AM = JSON.parse(localStorage.getItem('9AM'));
+console.log(save9AM); // works
+
+$('#0').append(save9AM);
