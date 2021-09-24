@@ -79,4 +79,4 @@ $('#btn0').click(function() {
 var save9AM = JSON.parse(localStorage.getItem('9AM'));
 console.log(save9AM); // works
 
-$('#0').append(save9AM);
+$('#0').value(save9AM);
