@@ -135,7 +135,7 @@ $('#btn5').click(function() {
 
 var save2PM = JSON.parse(localStorage.getItem('2PM'));
 
-document.getElementById("5").value = save2PM;\
+document.getElementById("5").value = save2PM;
 
 //button 6 (3pm time slot)
 $('#btn6').click(function() {
