@@ -71,10 +71,10 @@ if(currentHour === 17){
 
 //button 0 (9am time slot)
 $('#btn0').click(function() {
-    inputOne = document.getElementById("0").value;
-    console.log(inputOne);
+    inputZero = document.getElementById("0").value;
+    console.log(inputZero);
     // // must stringify the object before save
-    localStorage.setItem('9AM', JSON.stringify(inputOne));
+    localStorage.setItem('9AM', JSON.stringify(inputZero));
     });
 
 var save9AM = JSON.parse(localStorage.getItem('9AM'));
@@ -85,12 +85,21 @@ document.getElementById("0").value = save9AM;
 //button 1 (10am time slot)
 $('#btn1').click(function() {
     inputOne = document.getElementById("1").value;
-    console.log(inputOne);
     // // must stringify the object before save
     localStorage.setItem('10AM', JSON.stringify(inputOne));
     });
 
 var save10AM = JSON.parse(localStorage.getItem('10AM'));
-console.log(save10AM); // works
 
 document.getElementById("1").value = save10AM;
+
+//button 2 (11am time slot)
+$('#btn2').click(function() {
+    inputTwo = document.getElementById("2").value;
+    // // must stringify the object before save
+    localStorage.setItem('11AM', JSON.stringify(inputTwo));
+    });
+
+var save11AM = JSON.parse(localStorage.getItem('11AM'));
+
+document.getElementById("2").value = save11AM;
