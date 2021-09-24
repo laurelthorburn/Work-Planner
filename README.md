@@ -3,7 +3,7 @@
 ## Description
 The purpose of this project was to create a daily planner that allows the user to store their agenda in hour time slots.  In addition, the user is able to see the current time with a red background, past time slots in gray, and future time slots in green.  The user is able to save their input upon button click and the data is available after they refresh the page.
 
-This project
+This project helped me continue to develop my css and javascript skills.  I was also able to use Moment.js and boostrap to save time styling and coding.  I enjoyed seeing how much my skills have grown.
 
 ## User Story
 
