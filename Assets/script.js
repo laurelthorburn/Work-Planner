@@ -7,17 +7,59 @@ function updateClock() {
 setInterval(updateClock, 1000);
 
 //Console logging each data-time
-$('[data-time]').each(function() {
-    console.log(typeof($(this).data('time'))); //number = type of
-  }) //data is a number
 
- var currentHour = currentTime.format('h');
- console.log(typeof(currentHour)); //works, says it's a string so comparing number to string
 
-// if((document.data("time", 9)) == currentHour){
-//     console.log(($(this).data('time')));
-//     console.log(currentHour);
-//    $('.form-control').css("background-color", "#ff6961"); //confirmed css works
-// };
+var currentHour = Number(currentTime.format('H'));
+console.log(typeof(currentHour)); //works, says it's a string so comparing number to string, used number() to convert from string to # sickkk
 
-console.log($( "body" ).data("9"));
+
+// $('[data-time]').each(function(i) {
+//     console.log($(this).data('time')); // number
+
+
+if(currentHour === 9){
+    $('#0').css("background-color", "#ff6961"); //confirmed css works
+} else if(currentHour < 9){
+    $('#0').css("background-color", "#77dd77"); //confirmed css works
+};
+
+if(currentHour === 10){
+    $('#1').css("background-color", "#ff6961"); //confirmed css works
+} else if(currentHour < 10){
+    $('#1').css("background-color", "#77dd77"); //confirmed css works
+};
+if(currentHour === 11){
+    $('#2').css("background-color", "#ff6961"); //confirmed css works
+} else if(currentHour < 11){
+    $('#2').css("background-color", "#77dd77"); //confirmed css works
+};
+if(currentHour === 12){
+    $('#3').css("background-color", "#ff6961"); //confirmed css works
+} else if(currentHour < 12){
+    $('#3').css("background-color", "#77dd77"); //confirmed css works
+};
+if(currentHour === 13){
+    $('#4').css("background-color", "#ff6961"); //confirmed css works
+} else if(currentHour < 13){
+    $('#4').css("background-color", "#77dd77"); //confirmed css works
+};
+if(currentHour === 14){
+    $('#5').css("background-color", "#ff6961"); //confirmed css works
+} else if(currentHour < 14){
+    $('#5').css("background-color", "#77dd77"); //confirmed css works
+};
+if(currentHour === 15){
+    $('#6').css("background-color", "#ff6961"); //confirmed css works
+} else if(currentHour < 15){
+    $('#6').css("background-color", "#77dd77"); //confirmed css works
+};
+if(currentHour === 16){
+    $('#7').css("background-color", "#ff6961"); //confirmed css works
+} else if(currentHour < 16){
+    $('#7').css("background-color", "#77dd77"); //confirmed css works
+};
+if(currentHour === 17){
+    $('#8').css("background-color", "#ff6961"); //confirmed css works
+} else if(currentHour < 17){
+    $('#8').css("background-color", "#77dd77"); //confirmed css works
+};
