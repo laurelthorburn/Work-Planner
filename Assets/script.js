@@ -1,4 +1,8 @@
-var inputOne = document.getElementsByTagName("nineAM");
+$(document).ready(
+    console.log('ready!')
+);
+
+var inputOne;
 
 //Setting current time as a global function
 var currentTime = moment();
@@ -65,19 +69,18 @@ if(currentHour === 17){
     $('#8').css("background-color", "#77dd77"); //confirmed css works
 };
 
-//local storage
-$("#btn0").click(
-    function() {
-        inputOne = inputOne.value;
-        console.log(inputOne);
-       // must stringify the object before save
-       localStorage.setItem('9AM', JSON.stringify(inputOne));
-    }
-);
+$('#btn0').click(function() {
+    console.log(1+1);
+    inputOne = document.getElementById("0").value;
+    console.log(inputOne);
+    // // must stringify the object before save
+    localStorage.setItem('9AM', JSON.stringify(inputOne));
+    });
 
-// $("#loadGame").click(
-//     function() {
-//        var save9AM = JSON.parse(localStorage.getItem('9AM'));
-//        alert(save9AM);
-//     }
-// );
+window.onload = function () {
+    if(inputOne.innerText === null){
+        inputOne.innerText = ("");
+    } else{
+       var save9AM = JSON.parse(localStorage.getItem('9AM'));
+       inputOne.val(save9AM);
+    }};
