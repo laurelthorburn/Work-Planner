@@ -18,10 +18,6 @@ setInterval(updateClock, 1000);
 var currentHour = Number(currentTime.format('H'));
 console.log(typeof(currentHour)); //works, says it's a string so comparing number to string, used number() to convert from string to # sickkk
 
-
-// $('[data-time]').each(function(i) {
-//     console.log($(this).data('time')); // number
-
 //time block
 if(currentHour === 9){
     $('#0').css("background-color", "#ff6961"); //confirmed css works
