@@ -32,7 +32,7 @@ THEN the saved events persist
 ```
 
 
-# Website Screenshot
+# Website Video
 
 ![Screenshot of Laurel Thorburn's Work Planner](Assets/Images/WorkPlanner.gif)
 
